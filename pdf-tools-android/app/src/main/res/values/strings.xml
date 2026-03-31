@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PDF Tools</string>
+
+    <!-- Feature names -->
+    <string name="feature_merge_pdf">Merge PDF</string>
+    <string name="feature_split_pdf">Split PDF</string>
+    <string name="feature_compress_pdf">Compress PDF</string>
+    <string name="feature_pdf_to_word">PDF to Word</string>
+    <string name="feature_pdf_to_ppt">PDF to PowerPoint</string>
+    <string name="feature_pdf_to_excel">PDF to Excel</string>
+    <string name="feature_word_to_pdf">Word to PDF</string>
+    <string name="feature_ppt_to_pdf">PowerPoint to PDF</string>
+    <string name="feature_excel_to_pdf">Excel to PDF</string>
+    <string name="feature_edit_pdf">Edit PDF</string>
+    <string name="feature_pdf_to_jpg">PDF to JPG</string>
+    <string name="feature_jpg_to_pdf">JPG to PDF</string>
+    <string name="feature_sign_pdf">Sign PDF</string>
+    <string name="feature_watermark_pdf">Watermark PDF</string>
+    <string name="feature_rotate_pdf">Rotate PDF</string>
+    <string name="feature_html_to_pdf">HTML to PDF</string>
+    <string name="feature_unlock_pdf">Unlock PDF</string>
+    <string name="feature_protect_pdf">Protect PDF</string>
+    <string name="feature_organize_pdf">Organize PDF</string>
+    <string name="feature_pdf_to_pdfa">PDF to PDF/A</string>
+    <string name="feature_repair_pdf">Repair PDF</string>
+    <string name="feature_page_numbers">Page Numbers</string>
+    <string name="feature_scan_to_pdf">Scan to PDF</string>
+    <string name="feature_ocr_pdf">OCR PDF</string>
+    <string name="feature_compare_pdf">Compare PDF</string>
+    <string name="feature_redact_pdf">Redact PDF</string>
+    <string name="feature_crop_pdf">Crop PDF</string>
+
+    <!-- Feature descriptions -->
+    <string name="desc_merge_pdf">Combine multiple PDFs into one in the order you choose.</string>
+    <string name="desc_split_pdf">Separate pages into individual PDF files or ranges.</string>
+    <string name="desc_compress_pdf">Reduce file size while optimising for maximal PDF quality.</string>
+    <string name="desc_pdf_to_word">Convert PDF files into editable DOC and DOCX documents.</string>
+    <string name="desc_pdf_to_ppt">Turn PDF files into editable PPT and PPTX slideshows.</string>
+    <string name="desc_pdf_to_excel">Pull data from PDFs into Excel spreadsheets.</string>
+    <string name="desc_word_to_pdf">Make DOC and DOCX files easy to read by converting them to PDF.</string>
+    <string name="desc_ppt_to_pdf">Make PPT and PPTX slideshows easy to view by converting them to PDF.</string>
+    <string name="desc_excel_to_pdf">Make Excel spreadsheets easy to read by converting to PDF.</string>
+    <string name="desc_edit_pdf">Add text, images, shapes or freehand annotations to a PDF.</string>
+    <string name="desc_pdf_to_jpg">Convert each PDF page into a JPG image.</string>
+    <string name="desc_jpg_to_pdf">Convert JPG images to PDF in seconds.</string>
+    <string name="desc_sign_pdf">Draw and stamp your signature onto a PDF document.</string>
+    <string name="desc_watermark_pdf">Stamp an image or text over your PDF in seconds.</string>
+    <string name="desc_rotate_pdf">Rotate your PDFs — even multiple PDFs at once.</string>
+    <string name="desc_html_to_pdf">Convert webpages in HTML to PDF by URL.</string>
+    <string name="desc_unlock_pdf">Remove PDF password security, giving you freedom to use it.</string>
+    <string name="desc_protect_pdf">Protect PDF files with a password. Encrypt PDF documents.</string>
+    <string name="desc_organize_pdf">Sort and delete pages of your PDF file however you like.</string>
+    <string name="desc_pdf_to_pdfa">Transform your PDF to PDF/A for long-term archiving.</string>
+    <string name="desc_repair_pdf">Repair a damaged PDF and recover data from corrupt files.</string>
+    <string name="desc_page_numbers">Add page numbers into PDFs. Choose position, dimensions, typography.</string>
+    <string name="desc_scan_to_pdf">Capture document scans from your camera and convert to PDF.</string>
+    <string name="desc_ocr_pdf">Convert scanned PDFs into searchable and selectable documents.</string>
+    <string name="desc_compare_pdf">Side-by-side document comparison to spot changes between versions.</string>
+    <string name="desc_redact_pdf">Permanently remove sensitive information from a PDF.</string>
+    <string name="desc_crop_pdf">Crop margins or select specific areas of a PDF.</string>
+
+    <!-- Buttons -->
+    <string name="btn_select_pdf">Select PDF</string>
+    <string name="btn_select_file">Select File</string>
+    <string name="btn_add_pdf_files">Add PDF Files</string>
+    <string name="btn_add_images">Add Images</string>
+    <string name="btn_select_image">Select Image</string>
+    <string name="btn_merge">Merge PDFs</string>
+    <string name="btn_split">Split PDF</string>
+    <string name="btn_compress">Compress PDF</string>
+    <string name="btn_convert">Convert</string>
+    <string name="btn_convert_to_jpg">Convert to JPG</string>
+    <string name="btn_convert_to_pdf">Convert to PDF</string>
+    <string name="btn_apply">Apply</string>
+    <string name="btn_apply_watermark">Apply Watermark</string>
+    <string name="btn_sign">Sign PDF</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_rotate">Rotate PDF</string>
+    <string name="btn_load">Load</string>
+    <string name="btn_unlock">Unlock PDF</string>
+    <string name="btn_protect">Protect PDF</string>
+    <string name="btn_add_page_numbers">Add Page Numbers</string>
+    <string name="btn_capture">Capture</string>
+    <string name="btn_create_pdf">Create PDF</string>
+    <string name="btn_run_ocr">Run OCR</string>
+    <string name="btn_compare">Compare</string>
+    <string name="btn_prev">‹ Prev</string>
+    <string name="btn_next">Next ›</string>
+    <string name="btn_redact">Redact</string>
+    <string name="btn_crop">Crop PDF</string>
+    <string name="btn_process">Process</string>
+    <string name="btn_select_file_1">File 1</string>
+    <string name="btn_select_file_2">File 2</string>
+
+    <!-- Labels and hints -->
+    <string name="search_tools">Search tools…</string>
+    <string name="no_file_selected">No file selected</string>
+    <string name="file_selected">File selected</string>
+    <string name="no_files_selected">0 files selected</string>
+    <string name="no_images_selected">0 images selected</string>
+    <string name="no_image_selected">No image selected</string>
+    <string name="image_selected">Image selected</string>
+    <string name="no_scans_captured">No scans captured yet</string>
+    <string name="hint_page_ranges">Page ranges (optional)</string>
+    <string name="hint_page_ranges_example">Example: 1-3,5,7-9 — leave blank to split every page</string>
+    <string name="hint_annotation_text">Text to add</string>
+    <string name="hint_x">X position</string>
+    <string name="hint_y">Y position</string>
+    <string name="hint_page_number">Page number</string>
+    <string name="hint_watermark_text">Watermark text</string>
+    <string name="hint_font_size">Font size</string>
+    <string name="hint_password">PDF Password</string>
+    <string name="hint_user_password">User password</string>
+    <string name="hint_owner_password">Owner password (optional)</string>
+    <string name="hint_url">Enter URL</string>
+    <string name="hint_start_number">Start number</string>
+    <string name="hint_redact_pattern">Text / regex pattern to redact</string>
+    <string name="hint_width">Width</string>
+    <string name="hint_height">Height</string>
+    <string name="hint_organize_instructions">Drag to reorder pages • Swipe to delete</string>
+    <string name="label_draw_signature">Draw your signature</string>
+    <string name="label_opacity">Opacity</string>
+    <string name="label_rotation">Rotation</string>
+    <string name="label_position">Position</string>
+    <string name="label_crop_box">Crop Box (points)</string>
+    <string name="label_redact_region">Also redact a rectangular region</string>
+    <string name="watermark_text">Text</string>
+    <string name="watermark_image">Image</string>
+    <string name="mode_text">Text</string>
+    <string name="mode_draw">Draw</string>
+
+    <!-- Position strings -->
+    <string name="position_bottom_center">Bottom Center</string>
+    <string name="position_bottom_left">Bottom Left</string>
+    <string name="position_bottom_right">Bottom Right</string>
+    <string name="position_top_center">Top Center</string>
+    <string name="position_top_left">Top Left</string>
+    <string name="position_top_right">Top Right</string>
+
+    <!-- Status / result messages -->
+    <string name="files_selected">%d file(s) selected</string>
+    <string name="images_selected">%d image(s) selected</string>
+    <string name="original_size">Original size: %d KB</string>
+    <string name="page_count">%d page(s)</string>
+    <string name="scans_captured">%d scan(s) captured</string>
+    <string name="scan_captured">Scan %d captured</string>
+    <string name="page_info">Page %d of %d</string>
+    <string name="split_success">Split complete: %s</string>
+    <string name="jpg_export_success">Exported %d page(s) as JPG</string>
+    <string name="share_file">Share file via…</string>
+
+    <!-- Errors -->
+    <string name="error_select_at_least_two">Please select at least 2 PDF files.</string>
+    <string name="error_processing">Error: %s</string>
+    <string name="error_password_required">Please enter a password.</string>
+    <string name="error_no_image_selected">Please select a watermark image.</string>
+    <string name="error_redact_no_input">Enter a pattern or enable region redaction.</string>
+    <string name="camera_permission_denied">Camera permission is required for scanning.</string>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Storage permissions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_DOCUMENTS" />
+    <!-- Camera for Scan-to-PDF -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Internet for HTML-to-PDF web loading -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PDFToolsApp"
+        android:largeHeap="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- PDF Feature Activities -->
+        <activity android:name=".features.merge.MergePdfActivity"
+            android:label="@string/feature_merge_pdf" />
+        <activity android:name=".features.split.SplitPdfActivity"
+            android:label="@string/feature_split_pdf" />
+        <activity android:name=".features.compress.CompressPdfActivity"
+            android:label="@string/feature_compress_pdf" />
+        <activity android:name=".features.convert.PdfToWordActivity"
+            android:label="@string/feature_pdf_to_word" />
+        <activity android:name=".features.convert.PdfToPowerPointActivity"
+            android:label="@string/feature_pdf_to_ppt" />
+        <activity android:name=".features.convert.PdfToExcelActivity"
+            android:label="@string/feature_pdf_to_excel" />
+        <activity android:name=".features.convert.WordToPdfActivity"
+            android:label="@string/feature_word_to_pdf" />
+        <activity android:name=".features.convert.PowerPointToPdfActivity"
+            android:label="@string/feature_ppt_to_pdf" />
+        <activity android:name=".features.convert.ExcelToPdfActivity"
+            android:label="@string/feature_excel_to_pdf" />
+        <activity android:name=".features.edit.EditPdfActivity"
+            android:label="@string/feature_edit_pdf" />
+        <activity android:name=".features.jpg.PdfToJpgActivity"
+            android:label="@string/feature_pdf_to_jpg" />
+        <activity android:name=".features.jpg.JpgToPdfActivity"
+            android:label="@string/feature_jpg_to_pdf" />
+        <activity android:name=".features.sign.SignPdfActivity"
+            android:label="@string/feature_sign_pdf" />
+        <activity android:name=".features.watermark.WatermarkPdfActivity"
+            android:label="@string/feature_watermark_pdf" />
+        <activity android:name=".features.rotate.RotatePdfActivity"
+            android:label="@string/feature_rotate_pdf" />
+        <activity android:name=".features.html.HtmlToPdfActivity"
+            android:label="@string/feature_html_to_pdf" />
+        <activity android:name=".features.unlock.UnlockPdfActivity"
+            android:label="@string/feature_unlock_pdf" />
+        <activity android:name=".features.protect.ProtectPdfActivity"
+            android:label="@string/feature_protect_pdf" />
+        <activity android:name=".features.organize.OrganizePdfActivity"
+            android:label="@string/feature_organize_pdf" />
+        <activity android:name=".features.pdfa.PdfToPdfAActivity"
+            android:label="@string/feature_pdf_to_pdfa" />
+        <activity android:name=".features.repair.RepairPdfActivity"
+            android:label="@string/feature_repair_pdf" />
+        <activity android:name=".features.pagenumbers.PageNumbersActivity"
+            android:label="@string/feature_page_numbers" />
+        <activity android:name=".features.scan.ScanToPdfActivity"
+            android:label="@string/feature_scan_to_pdf" />
+        <activity android:name=".features.ocr.OcrPdfActivity"
+            android:label="@string/feature_ocr_pdf" />
+        <activity android:name=".features.compare.ComparePdfActivity"
+            android:label="@string/feature_compare_pdf" />
+        <activity android:name=".features.redact.RedactPdfActivity"
+            android:label="@string/feature_redact_pdf" />
+        <activity android:name=".features.crop.CropPdfActivity"
+            android:label="@string/feature_crop_pdf" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>
