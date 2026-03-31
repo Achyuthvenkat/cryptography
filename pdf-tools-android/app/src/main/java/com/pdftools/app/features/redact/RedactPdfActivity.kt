@@ -1,6 +1,5 @@
 package com.pdftools.app.features.redact
 
-import android.graphics.RectF
 import android.net.Uri
 import android.os.Bundle
 import com.itextpdf.kernel.colors.ColorConstants
@@ -8,8 +7,9 @@ import com.itextpdf.kernel.geom.Rectangle
 import com.itextpdf.kernel.pdf.PdfDocument
 import com.itextpdf.kernel.pdf.PdfReader
 import com.itextpdf.kernel.pdf.PdfWriter
+import com.itextpdf.pdfcleanup.PdfCleanUpLocation
+import com.itextpdf.pdfcleanup.PdfCleaner
 import com.itextpdf.pdfcleanup.autosweep.CompositeCleanupStrategy
-import com.itextpdf.pdfcleanup.autosweep.PdfAutoSweep
 import com.itextpdf.pdfcleanup.autosweep.RegexBasedCleanupStrategy
 import com.pdftools.app.R
 import com.pdftools.app.databinding.ActivityRedactPdfBinding
@@ -65,17 +65,17 @@ class RedactPdfActivity : BasePdfActivity() {
                                     it.add(RegexBasedCleanupStrategy(pattern)
                                         .setRedactionColor(ColorConstants.BLACK))
                                 }
-                                PdfAutoSweep(strategy).cleanUp(pdfDoc)
+                                PdfCleaner.autoSweepCleanUp(pdfDoc, strategy)
                             }
                             if (useRegion) {
                                 val cleanupLocations = (1..pdfDoc.numberOfPages).map { pageNum ->
-                                    com.itextpdf.pdfcleanup.PdfCleanUpLocation(
+                                    PdfCleanUpLocation(
                                         pageNum,
                                         Rectangle(x, y, width, height),
                                         ColorConstants.BLACK
                                     )
                                 }
-                                com.itextpdf.pdfcleanup.PdfCleaner.cleanUp(pdfDoc, cleanupLocations)
+                                PdfCleaner.cleanUp(pdfDoc, cleanupLocations)
                             }
                         }
                     }
